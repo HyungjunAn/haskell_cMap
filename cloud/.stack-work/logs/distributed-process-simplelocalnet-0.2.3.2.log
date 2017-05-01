@@ -1,0 +1,6 @@
+Configuring distributed-process-simplelocalnet-0.2.3.2...
+Cabal-simple_mPHDZzAJ_1.22.5.0_ghc-7.10.3: The following installed packages
+are broken because other packages they depend on are missing. These broken
+packages must be rebuilt before they can be used.
+package network-multicast-0.1.1 is broken due to missing package
+network-2.6.3.1-238267b4d3be4589c14857df316000e3

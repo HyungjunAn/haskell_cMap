@@ -1,0 +1,574 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-04 06:31:51.291069 UTC
+
+interface main@main:Main 8002
+  interface hash: 537eb6d9df82ba7a256dc0be90412d5d
+  ABI hash: 3f70031d20c5b9f162c657d0f8cc2bc1
+  export-list hash: f6b3fad033d0a7113cf486b730e661b4
+  orphan hash: c5ffcbdec97cabc255e7fb9f1af57443
+  flag hash: 84b4f65f0acd5bdb8dc6c9977ffa11b4
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-accessor-0.2.2.7@data-accessor-0.2.2.7-4qt9kbhlqc22eurok1PC3k
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP
+                      distributed-process-simplelocalnet-0.2.3.3@distributed-process-simplelocalnet-0.2.3.3-FRKjSNwztU3FuUcmXeHmVD
+                      distributed-static-0.3.5.0@distributed-static-0.3.5.0-1FkXlZiCjtfDypukzfxJEJ
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe
+                      network-multicast-0.2.0@network-multicast-0.2.0-Ky8uHp8xzqH6Yfocoo0Tcv
+                      network-transport-0.4.4.0@network-transport-0.4.4.0-7DyE1J7FjfCIcwCPvqwPVZ
+                      network-transport-tcp-0.5.1@network-transport-tcp-0.5.1-BVqLzFLKrPVH4g2b2XTysf
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      rank1dynamic-0.3.3.0@rank1dynamic-0.3.3.0-Dc2KQPZw4y91X07lv5KN1b
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      syb-0.6@syb-0.6-IcoSwlPi2Nx4zSqMmorFPS template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4:Data.Hashable.Generic
+         network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         syb-0.6@syb-0.6-IcoSwlPi2Nx4zSqMmorFPS:Data.Generics.Instances
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Compose base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Internal.Types
+                         distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Management.Internal.Table
+                         distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Management.Internal.Trace.Types
+                         distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Management.Internal.Types
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         network-transport-0.4.4.0@network-transport-0.4.4.0-7DyE1J7FjfCIcwCPvqwPVZ:Network.Transport
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  base-4.9.1.0:Text.Read 75c59863e882ebaec4532e9465e2ee9b
+import  -/  binary-0.8.3.0@binary-0.8.3.0:Data.Binary 04731cb24bdd2d171e280dacabbc5b93
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process 6e64aef551220e51d9e20db779345e25
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Closure 1555afb425ab5deb02ac9f7257cd54ad
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Internal.Closure.BuiltIn be721d9936a6664079c75e6e0fd196db
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Internal.Closure.TH 1e5ebb25b285271d4436c8d0c3fdeeaf
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Internal.Primitives 3748d7e16866b4bf608defde99c18eb6
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Internal.Spawn 44670ec6ad6c667758df63bd195a4577
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Internal.Types 8c6fd3a66d4b5c41f28022a95f6582e3
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Node 9b4ea8f95a3f05c7c5a25ba55167a712
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-BqB6W9Ce871DcPnPyTq1zP:Control.Distributed.Process.Serializable de1d3ef5ba240d554b6a8fac266ed5c4
+import  -/  distributed-process-simplelocalnet-0.2.3.3@distributed-process-simplelocalnet-0.2.3.3-FRKjSNwztU3FuUcmXeHmVD:Control.Distributed.Process.Backend.SimpleLocalnet 9ea10332197794781a44a574d4b75cf6
+import  -/  distributed-static-0.3.5.0@distributed-static-0.3.5.0-1FkXlZiCjtfDypukzfxJEJ:Control.Distributed.Static 841c7e8459fcc6cc4abf344e1885a430
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  rank1dynamic-0.3.3.0@rank1dynamic-0.3.3.0-Dc2KQPZw4y91X07lv5KN1b:Data.Rank1Dynamic f77a29a40055e3d0ea5d0878528a8a87
+addDependentFile "/root/.stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+f152c555eac2a5207a21660331710710
+  $s$fSerializablea ::
+    Control.Distributed.Process.Serializable.Serializable
+      GHC.Integer.Type.Integer
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Integer.Type.Integer
+                  Main.$s$fSerializablea_$s$fSerializablea_$cp1Serializable
+                  Main.$s$fSerializablea1 -}
+50c4bc162c0cea1e1dc0a3e802c5410f
+  $s$fSerializablea1 ::
+    Data.Typeable.Internal.Typeable GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fSerializablea2
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <GHC.Integer.Type.Integer>_N)) -}
+85bbb2724b7e3b87f7e25e6f1df81f9b
+  $s$fSerializablea10 ::
+    Control.Distributed.Process.Serializable.Serializable
+      Control.Distributed.Process.Internal.Types.ProcessId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Control.Distributed.Process.Internal.Types.ProcessId
+                  Main.$s$fSerializablea_$s$fSerializablea_$cp1Serializable2
+                  Main.$s$fSerializablea11 -}
+fa976ff79c4be083121740472a15cadd
+  $s$fSerializablea11 ::
+    Data.Typeable.Internal.Typeable
+      Control.Distributed.Process.Internal.Types.ProcessId
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fSerializablea12
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <Control.Distributed.Process.Internal.Types.ProcessId>_N)) -}
+d8b34d69d2ef057ce44b2c6aaee6ce94
+  $s$fSerializablea12 ::
+    GHC.Prim.Proxy#
+      Control.Distributed.Process.Internal.Types.ProcessId
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy#
+                              Control.Distributed.Process.Internal.Types.ProcessId) ->
+                 Main.$s$fSerializablea13) -}
+c5d2d1f9796754fc1346cf5fbfbbff58
+  $s$fSerializablea13 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$s$fSerializablea14
+                           kt_fps) of dt5 { GHC.Fingerprint.Type.Fingerprint dt6 dt7 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt6
+                   dt7
+                   Control.Distributed.Process.Internal.Types.$tcProcessId
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+f1083ab106cd33c1e60b5b71d59d859b
+  $s$fSerializablea14 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   6856010788311280611##
+                   10238662206104437161##) -}
+79c36a4d369b68975a2e6e05d7998e1c
+  $s$fSerializablea2 ::
+    GHC.Prim.Proxy# GHC.Integer.Type.Integer
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# GHC.Integer.Type.Integer) ->
+                 Main.$s$fSerializablea3) -}
+cd03b0acd2eb6fcd7318d771775be942
+  $s$fSerializablea3 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$s$fSerializablea4
+                           kt_fps) of dt5 { GHC.Fingerprint.Type.Fingerprint dt6 dt7 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt6
+                   dt7
+                   GHC.Integer.Type.$tcInteger
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+edeef01c445e25b50b5f4bfedb991421
+  $s$fSerializablea4 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   4243490490217825131##
+                   6185988462045966752##) -}
+b107ab8218dceb83e64a1d4c75bc376b
+  $s$fSerializablea5 ::
+    Control.Distributed.Process.Serializable.Serializable ()
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ()
+                  Main.$s$fSerializablea_$s$fSerializablea_$cp1Serializable1
+                  Main.$s$fSerializablea6 -}
+6346f937d71572e3ba9b7678fd873e56
+  $s$fSerializablea6 :: Data.Typeable.Internal.Typeable ()
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fSerializablea7
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0] <*>_N <()>_N)) -}
+3d34d3117c8f3c67f49aaf1b79e25303
+  $s$fSerializablea7 ::
+    GHC.Prim.Proxy# () -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# ()) -> Main.$s$fSerializablea8) -}
+b27099a5e07899afbd8fded0394a5a18
+  $s$fSerializablea8 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$s$fSerializablea9
+                           kt_fps) of dt5 { GHC.Fingerprint.Type.Fingerprint dt6 dt7 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt6
+                   dt7
+                   GHC.Tuple.$tc()
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+edba41d64c0b7a68688b20b16aa8205f
+  $s$fSerializablea9 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   15843165073189925570##
+                   13730769858450861905##) -}
+dde0276aa82c1fd08102db3178237e76
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable ::
+    Data.Binary.Class.Binary GHC.Integer.Type.Integer
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Data.Binary.Class.$fBinaryInteger -}
+d868dbf0e813506e46cd0617506ce61f
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable1 ::
+    Data.Binary.Class.Binary ()
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Data.Binary.Class.$fBinary() -}
+cdf8f1d7c1ba26dc3d2edff282bcb428
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable2 ::
+    Data.Binary.Class.Binary
+      Control.Distributed.Process.Internal.Types.ProcessId
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Control.Distributed.Process.Internal.Types.$fBinaryProcessId -}
+cb9596cdc5f997ce0a5acf9b9864e270
+  $s$fShow[]_$s$fShow[]_$cshow ::
+    [GHC.Integer.Type.Integer] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x2 :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Show.$fShowInteger_$cshowList
+                   x2
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+af32f010c5caf51e0d9a2688b9e47ffc
+  $stoDynamic12 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$stoDynamic13
+                           kt_fps) of dt5 { GHC.Fingerprint.Type.Fingerprint dt6 dt7 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt6
+                   dt7
+                   Control.Distributed.Process.Serializable.$tcSerializableDict
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+4dd15d56c7e3e7d17f90a754b8c06810
+  $stoDynamic13 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   4719047562689482637##
+                   16789434832340507090##) -}
+7c515d5c689f7fedde4fef88701f0c59
+  $stoDynamic2 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Main.$stoDynamic4 of wild { Data.Typeable.Internal.TypeRep dt5 dt6 tc ks trs ->
+                 let {
+                   types :: [Data.Typeable.Internal.TypeRep]
+                   = GHC.Base.++
+                       @ Data.Typeable.Internal.TypeRep
+                       trs
+                       Main.$stoDynamic3
+                 } in
+                 case Data.Typeable.Internal.typeRepFingerprints
+                        ks
+                        types of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           (Data.Typeable.Internal.tyConFingerprint tc)
+                           kt_fps) of dt7 { GHC.Fingerprint.Type.Fingerprint dt8 dt9 ->
+                 Data.Typeable.Internal.TypeRep dt8 dt9 tc ks types } } }) -}
+399f0c4234c9d5d47fb6109012ee7cfd
+  $stoDynamic3 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   Main.$s$fSerializablea8
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+9801d150d60da8f23c281575f350902c
+  $stoDynamic4 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$stoDynamic5
+                           kt_fps) of dt5 { GHC.Fingerprint.Type.Fingerprint dt6 dt7 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt6
+                   dt7
+                   Control.Distributed.Process.Internal.Types.$tcProcess
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+fc8625a4b159732229a962b9c942b5ae
+  $stoDynamic5 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   2717371897200615416##
+                   15755662300403640920##) -}
+b41e22b5debc18a33e09835cb63f9d89
+  $stoDynamic6 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Main.$stoDynamic8 of wild { Data.Typeable.Internal.TypeRep dt5 dt6 tc ks trs ->
+                 let {
+                   types :: [Data.Typeable.Internal.TypeRep]
+                   = GHC.Base.++
+                       @ Data.Typeable.Internal.TypeRep
+                       trs
+                       Main.$stoDynamic7
+                 } in
+                 case Data.Typeable.Internal.typeRepFingerprints
+                        ks
+                        types of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           (Data.Typeable.Internal.tyConFingerprint tc)
+                           kt_fps) of dt7 { GHC.Fingerprint.Type.Fingerprint dt8 dt9 ->
+                 Data.Typeable.Internal.TypeRep dt8 dt9 tc ks types } } }) -}
+4d68a7c8d8d936f0eddf18dcbf45c057
+  $stoDynamic7 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   Main.$s$fSerializablea13
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+d08890d1f5786a5b144bcc9e8255d7ac
+  $stoDynamic8 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$stoDynamic9
+                           kt_fps) of dt5 { GHC.Fingerprint.Type.Fingerprint dt6 dt7 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt6
+                   dt7
+                   GHC.Types.$tc(->)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+6789da98deedc5b31368b79eaa3ad5e8
+  $stoDynamic9 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   16275961958878852713##
+                   3578558998586661682##) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+f8036071206d03d9cfd1c3c1bbfb9cbf
+  $wslave ::
+    Control.Distributed.Process.Internal.Types.ProcessId
+    -> Control.Distributed.Process.Internal.StrictMVar.StrictMVar
+         (Control.Distributed.Process.Internal.StrictList.StrictList
+            Control.Distributed.Process.Internal.Types.Message)
+    -> Control.Concurrent.STM.TChan.TChan
+         Control.Distributed.Process.Internal.Types.Message
+    -> GHC.Conc.Sync.TVar GHC.Types.Int
+    -> GHC.Prim.Weak#
+         (Control.Distributed.Process.Internal.CQueue.CQueue
+            Control.Distributed.Process.Internal.Types.Message)
+    -> Control.Distributed.Process.Internal.Types.ProcessId
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld
+         Control.Distributed.Process.Internal.Types.LocalProcessState
+    -> GHC.Prim.ThreadId#
+    -> Control.Distributed.Process.Internal.Types.NodeId
+    -> Network.Transport.EndPoint
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld
+         Control.Distributed.Process.Internal.Types.LocalNodeState
+    -> Control.Concurrent.Chan.Chan
+         Control.Distributed.Process.Internal.Types.NCMsg
+    -> Control.Distributed.Process.Internal.Types.MxEventBus
+    -> Control.Distributed.Static.RemoteTable
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 15,
+     Strictness: <L,U(U(U,U,U,U),U,U)><L,U(U)><L,U(U,U)><L,U(U)><L,U><S,U><L,U><L,U><L,U(U,U,U,U)><L,U(U,U,U,U,U,U)><L,U><L,U(U,U)><L,U><L,U><S,U>,
+     Inline: [0] -}
+d9c0dee8a685c5ed422401aaa63f23bf
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+01d62c2c484918d4b5d94b688c90c90e
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+129a1a814fa667791781f32a098e848d
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+e512e83ef1f78295d3451c59457bc2ad
+  slave ::
+    Control.Distributed.Process.Internal.Types.ProcessId
+    -> Control.Distributed.Process.Internal.Types.Process ()
+  {- Arity: 3,
+     Strictness: <L,U(U(U,U,U,U),U,U)><S(SLSLLS),1*U(U(U(U),U(U,U),U(U)),U,U,U,U,U(U(U,U,U,U),U(U,U,U,U,U,U),U,U(U,U),U,U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.slave1
+                  `cast`
+                (<Control.Distributed.Process.Internal.Types.ProcessId>_R
+                 ->_R Trans
+                          (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                         <GHC.Types.IO>_R
+                                         <()>_N))
+                               (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N))) -}
+0eeeec5d918204b61b48b136c6183aa5
+  slave1 ::
+    Control.Distributed.Process.Internal.Types.ProcessId
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3,
+     Strictness: <L,U(U(U,U,U,U),U,U)><S(SLSLLS),1*U(U(U(U),U(U,U),U(U)),U,U,U,U,U(U(U,U,U,U),U(U,U,U,U,U,U),U,U(U,U),U,U))><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Control.Distributed.Process.Internal.Types.ProcessId)
+                   (w1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { Control.Distributed.Process.Internal.Types.LocalProcess ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case ww1 of ww7 { Control.Distributed.Process.Internal.CQueue.CQueue ww8 ww9 ww10 ->
+                 case ww6 of ww11 { Control.Distributed.Process.Internal.Types.LocalNode ww12 ww13 ww14 ww15 ww16 ww17 ->
+                 Main.$wslave
+                   w
+                   ww8
+                   ww9
+                   ww10
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww12
+                   ww13
+                   ww14
+                   ww15
+                   ww16
+                   ww17
+                   w2 } } }) -}
+"SPEC/Main $fSerializablea @ ()" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                  ())
+                                                 ($dBinary :: Data.Binary.Class.Binary ())
+  Control.Distributed.Process.Serializable.$fSerializablea @ ()
+                                                           $dBinary
+                                                           $dTypeable
+  = Main.$s$fSerializablea5
+"SPEC/Main $fSerializablea @ Integer" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                       GHC.Integer.Type.Integer)
+                                                      ($dBinary :: Data.Binary.Class.Binary
+                                                                     GHC.Integer.Type.Integer)
+  Control.Distributed.Process.Serializable.$fSerializablea @ GHC.Integer.Type.Integer
+                                                           $dBinary
+                                                           $dTypeable
+  = Main.$s$fSerializablea
+"SPEC/Main $fSerializablea @ ProcessId" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                         Control.Distributed.Process.Internal.Types.ProcessId)
+                                                        ($dBinary :: Data.Binary.Class.Binary
+                                                                       Control.Distributed.Process.Internal.Types.ProcessId)
+  Control.Distributed.Process.Serializable.$fSerializablea @ Control.Distributed.Process.Internal.Types.ProcessId
+                                                           $dBinary
+                                                           $dTypeable
+  = Main.$s$fSerializablea10
+"SPEC/Main $fSerializablea_$cp1Serializable @ ()" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                   ())
+                                                                  ($dBinary :: Data.Binary.Class.Binary
+                                                                                 ())
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ ()
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Main.$s$fSerializablea_$s$fSerializablea_$cp1Serializable1
+"SPEC/Main $fSerializablea_$cp1Serializable @ Integer" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                        GHC.Integer.Type.Integer)
+                                                                       ($dBinary :: Data.Binary.Class.Binary
+                                                                                      GHC.Integer.Type.Integer)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ GHC.Integer.Type.Integer
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Main.$s$fSerializablea_$s$fSerializablea_$cp1Serializable
+"SPEC/Main $fSerializablea_$cp1Serializable @ ProcessId" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                          Control.Distributed.Process.Internal.Types.ProcessId)
+                                                                         ($dBinary :: Data.Binary.Class.Binary
+                                                                                        Control.Distributed.Process.Internal.Types.ProcessId)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ Control.Distributed.Process.Internal.Types.ProcessId
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Main.$s$fSerializablea_$s$fSerializablea_$cp1Serializable2
+"SPEC/Main $fShow[]_$cshow @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                   GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshow @ GHC.Integer.Type.Integer $dShow
+  = Main.$s$fShow[]_$s$fShow[]_$cshow
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
