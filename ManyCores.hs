@@ -40,7 +40,7 @@ mkSlave fName = [| \them -> forever $ do
                           let ret = $(varE fName) n
                           send them ret |]
 
-runSlave nThread  n = [| 
+runSlave  = [| \n -> \nThread ->
     let threads = [1..nThread]
     in do
       forM_ threads $ \thread -> do

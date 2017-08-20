@@ -41,10 +41,7 @@ main = do
     nThread <- getNumCapabilities 
     case args of 
       ["slave"] -> do
-            port <- pickPort 100
-            backend <- initializeBackend "127.0.0.1" (fromJust port) ($(varE (mkName "__remoteTable")) initRemoteTable)
-            --print $ "slave.... " ++ (fromJust port)
-            startSlave backend
+            $runSlave 80 nThread
       ["master"] -> do
             {-print "Master Mode"
             handles <- forM [1..nThread] $ \i -> do
