@@ -24,18 +24,61 @@ import qualified Control.Distributed.Process as Ps
 
 import Control.Concurrent.MVar
 
-{-
-slave :: ProcessId -> (a -> b) -> Process ()
-slave them f = forever $ do
+import Language.Haskell.TH.Syntax
+import Language.Haskell.TH
+
+
+{-sslave :: Serializable a => (ProcessId, a -> a) -> Process ()-}
+{-sslave :: (ProcessId, Int -> Int) -> Process ()
+sslave (them, f) = forever $ do
     n <- expect
-    send them (f n)
+    let ret = f n
+    send them ret-}
 
-remotable ['slave, 'f]
+mkSlave fName = [| \them -> forever $ do
+                          n <- expect
+                          let ret = $(varE fName) n
+                          send them ret |]
 
-rtable :: RemoteTable
-rtable = __remoteTable initRemoteTable
+runSlave nThread  n = [| 
+    let threads = [1..nThread]
+    in do
+      forM_ threads $ \thread -> do
+        port <- pickPort (n + thread)
+        backend <- initializeBackend "127.0.0.1" (fromJust port) ($(varE (mkName "__remoteTable")) initRemoteTable)
+        startSlave backend |]
+
+--runMaster  :: Serializable a => Int -> Int -> Name -> [a] -> IO [Int]
+runMaster name = [| \n -> \nThread -> \src -> do
+    port <- pickPort n
+    backend <- initializeBackend "127.0.0.1" (fromJust port) ($(varE (mkName "__remoteTable")) initRemoteTable)
+    ret <- mcoreStartMaster backend nThread $ \slaves mResult -> do
+        us <- getSelfPid
+        slaveProcesses <- forM slaves $ \nid -> spawn nid ($(mkClosure name) us)
+        spawnLocal $ forM_ (zip src (cycle slaveProcesses)) $ \ (m, them) -> send them m
+        let src_size = length src
+        ret <- mergeList src_size
+        --liftIO $ print ret
+        liftIO $ putMVar mResult ret
+    return ret |]
+{-    where
+        mergeList :: Serializable a => Int -> Process [a]
+        mergeList = go []
+            where
+                go :: Serializable a => [a] -> Int -> Process [a]
+                go !acc 0 = return acc
+                go !acc n = do
+                    m <- expect 
+                    go (acc ++ [m]) (n-1)
 -}
-
+mergeList :: Int -> Process [Int]
+mergeList = go []
+    where
+    go :: [Int] -> Int -> Process [Int]
+    go !acc 0 = return acc
+    go !acc n = do
+        m <- expect 
+        go (acc ++ [m]) (n-1)
 
 getExecuteInfo :: IO (String, [String])
 getExecuteInfo = do
@@ -97,6 +140,20 @@ pickPort n = do
                 searchPort (candidate + 1) usedPorts
             else
                 Just (show candidate)
+
+getHostIp :: IO (Maybe String)
+getHostIp = do
+    ip <- getProcessOutput $
+                    "ifconfig | grep inet | head -n 1  | awk -F ':' '{print $2}' | awk '{print $1}'"
+    case ip of 
+        "" -> return   Nothing
+        _  -> return $ Just (take (length ip - 1) ip) -- remove newline
+    where
+        getProcessOutput :: String -> IO String
+        getProcessOutput command = do
+              (_pin, pOut, pErr, handle) <- runInteractiveCommand command
+              output <- hGetContents pOut
+              return output
 
 checkSlaveMode :: [String] -> Bool
 checkSlaveMode [] = False
